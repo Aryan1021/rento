@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1081036736225",
+    "project_id": "rento-aryan21",
+    "storage_bucket": "rento-aryan21.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081036736225:android:621369754ac7428bdf59a0",
+        "android_client_info": {
+          "package_name": "com.example.rento"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7ojKfK0DVg12FqMdR3U_x4wYpxRa6Jmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
