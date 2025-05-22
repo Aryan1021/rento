@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:rento/firebase_options.dart';
+import 'package:rento/presentation/pages/car_list_screen.dart';
 import 'package:rento/presentation/pages/onboarding_page.dart';
 
 void main() async {
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: OnboardingPage(), // You can pass apiKey if needed
+      home: OnboardingPage(),
     );
   }
 }
