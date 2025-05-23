@@ -13,10 +13,8 @@ class CarListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
-          child: Text(
-              'Choose Your Car',
-          ),
+        title: Text(
+          'Choose Your Car',
         ),
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
@@ -24,7 +22,7 @@ class CarListScreen extends StatelessWidget {
       body: ListView.builder(
         itemCount: cars.length,
         itemBuilder: (context, index) {
-            return CarCard(car: cars[index]);
+          return CarCard(car: cars[index]);
         },
       ),
     );
