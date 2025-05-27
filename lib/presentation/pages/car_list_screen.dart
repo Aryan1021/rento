@@ -21,7 +21,7 @@ class CarListScreen extends StatelessWidget {
         builder: (context, state) {
           if(state is CarsLoaded) {
             return Center(child: CircularProgressIndicator(),);
-          }Add car feature with BLoC pattern, repository, and Firebase integration
+          }
           else if(state is CarsLoaded) {
             return ListView.builder(
                 itemCount: state.cars.length,
