@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:rento/firebase_options.dart';
+import 'package:rento/presentation/pages/MapsDetailsPage.dart';
 import 'package:rento/presentation/pages/car_details_page.dart';
 import 'package:rento/presentation/pages/car_list_screen.dart';
 import 'package:rento/presentation/pages/onboarding_page.dart';
