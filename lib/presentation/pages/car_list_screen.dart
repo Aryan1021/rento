@@ -6,35 +6,30 @@ import 'package:rento/presentation/bloc/car_state.dart';
 import 'package:rento/presentation/widgets/car_card.dart';
 
 class CarListScreen extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Choose Your Car',
-        ),
+        title: const Text('Choose Your Car'),
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
       ),
-      body: BlocBuilder<CarBloc, CarState> (
+      body: BlocBuilder<CarBloc, CarState>(
         builder: (context, state) {
-          if(state is CarsLoaded) {
-            return Center(child: CircularProgressIndicator(),);
-          }Add car feature with BLoC pattern, repository, and Firebase integration
-          else if(state is CarsLoaded) {
+          if (state is CarsLoading) {
+            return const Center(child: CircularProgressIndicator());
+          } else if (state is CarsLoaded) {
             return ListView.builder(
-                itemCount: state.cars.length,
-                itemBuilder: (context, index) {
+              itemCount: state.cars.length,
+              itemBuilder: (context, index) {
                 return CarCard(car: state.cars[index]);
-                },
+              },
             );
+          } else if (state is CarsError) {
+            return Center(child: Text('Error: ${state.message}'));
           }
-          else if(state is CarsError) {
-            return Center(child: Text('error : ${state.message}'),);
-          }
-          return Container();
-       }
+          return const Center(child: Text('No data available'));
+        },
       ),
     );
   }

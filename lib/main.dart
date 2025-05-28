@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:rento/firebase_options.dart';
 import 'package:rento/injection_container.dart';
 import 'package:rento/presentation/bloc/car_bloc.dart';
@@ -21,7 +22,13 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+
+  // 🛠 Disable Firestore persistence to avoid cached stale data
+  FirebaseFirestore.instance.settings = const Settings(persistenceEnabled: false);
+
+  // Initialize DI container
   initInjection();
+
   runApp(const MyApp());
 }
 
