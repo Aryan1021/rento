@@ -54,10 +54,18 @@
 ### 5. Run the App
 - flutter run
 
-## 📁 Project Structure
+---
 
-![image](https://github.com/user-attachments/assets/b41b2973-b0e9-42be-8319-003254f5dca5)
-![image](https://github.com/user-attachments/assets/87e27b73-6533-4d7f-96b8-142e17ed8a98)
+## 📚 Lessons Learned
+- Integrated Firebase Firestore effectively for real-time data storage and retrieval.
+- Debugged Firestore type casting issues, especially with `double` and `int` parsing.
+- Leveraged Flutter BLoC for structured state management.
+- Understood importance of modular folder structure and clean architecture.
+- Learned how to trace data flow from Firestore to UI components using `factory` constructors.
+- Improved Flutter UI design with reusable widgets and responsive layout handling.
+- Gained experience in maintaining scalable code for production-ready apps.
+
+---
 
 ### 📝 License
 This project is licensed under the MIT License. See the LICENSE file for details.
