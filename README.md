@@ -35,7 +35,7 @@
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
-- git clone https://github.com/your-username/rento.git
+- git clone https://github.com/Aryan1021/rento.git
 - cd rento
 
 ### 2. Install Dependencies
@@ -56,35 +56,8 @@
 
 ## 📁 Project Structure
 
-lib/
-├── data/
-│ ├── datasources/
-│ │ └── firebase_car_data_source.dart
-│ ├── models/
-│ │ └── car.dart
-│ └── repositories/
-│ └── car_repository_impl.dart
-├── domain/
-│ ├── repositories/
-│ │ └── car_repository.dart
-│ └── usecases/
-│ └── get_cars.dart
-├── presentation/
-│ ├── bloc/
-│ │ ├── car_bloc.dart
-│ │ ├── car_event.dart
-│ │ └── car_state.dart
-│ ├── pages/
-│ │ ├── car_details_page.dart
-│ │ ├── car_list_screen.dart
-│ │ ├── MapsDetailsPage.dart
-│ │ └── onboarding_page.dart
-│ └── widgets/
-│ ├── car_card.dart
-│ └── more_card.dart
-├── firebase_options.dart
-├── injection_container.dart
-└── main.dart
+![image](https://github.com/user-attachments/assets/b41b2973-b0e9-42be-8319-003254f5dca5)
+![image](https://github.com/user-attachments/assets/87e27b73-6533-4d7f-96b8-142e17ed8a98)
 
 ### 📝 License
 This project is licensed under the MIT License. See the LICENSE file for details.
